@@ -1,0 +1,153 @@
+What is cloud computing?
+
+->cloud computing is the delivery of computing services—including servers, storage, databases, 
+networking, software, analytics, and intelligence—over the Internet to offer faster innovation, 
+flexible resources, and economies of scale.
+
+
+characteristics of CC:
+
+-> Resource pooling means that a cloud service provider can share resources among several 
+clients, providing everyone with a different set of services as per their requirements.
+ Multiple clients are provided service from a same physical resource.
+
+Measured service:
+
+->The resource utilization is tracked for each application and occupant, 
+it will provide both the user and the resource provider with an account of what has been used. 
+This is done for various reasons like monitoring billing and effective use of resource.
+
+Rapid Elasticity: 
+
+->The Computing services should have IT resources that are able to scale out and in quickly 
+and on as needed basis. 
+Whenever the user require services it is provided to him and it is scale out as soon as its 
+requirement gets over.
+
+ON Demand Self Service: 
+
+->The Cloud computing services does not require any human administrators, 
+user themselves are able to provision, monitor and manage computing resources as needed.
+
+->Broad network access :The Computing services are generally provided over standard networks and 
+                        heterogeneous devices.
+
+Amazon Simple Storage service(S3)
+
+-->Amazon S3 treats data as individual objects.They can able to use store and retreive any amount
+of data any time. We can access when it needed. It makes copies on mutliple devices so that data
+cannot be lost.
+
+The abstraction away from the lower layers of storage and the 
+separation of data from its metadata comes with a  number of benefits. 
+For one, Amazon can provide a highly durable storage service for the fraction of the cost of block 
+storage. 
+You also only pay for the amount of storage you actually use. 
+Therefore you don’t need to second-guess and pre-allocate disk space.
+
+
+AWS SERVICES: 
+
+-> STORAGE 
+   ---> S3 (SIMPLE STORAGE SERVICE) IS STORAGE FOR INTERNET. WE CAN USE IT FOR STORING DATA
+
+RETREVING DATA AT ANY TIME FROM ANYWHERE IN THE WEB.
+
+AMAZON S3 CONCEPTS:
+
+Topics
+• Buckets (p. 2)
+• Objects (p. 3)
+• Keys (p. 3)
+• Regions (p. 3)
+• Amazon S3 data consistency model (p. 3)
+
+A bucket is a container for objects stored in Amazon S3. Every object is contained in a bucket.
+
+Objects are the fundamental entities stored in Amazon S3. Objects consist of object data and 
+metadata. The data portion is opaque to Amazon S3.
+
+A key is the unique identifier for an object within a bucket. Every object in a bucket has exactly
+one key.
+
+You can choose the geographical AWS Region where Amazon S3 will store the buckets that you create.
+
+***Amazon S3 Glacier
+
+Use Amazon S3 Glacier to provide durable and extremely low-cost storage for infrequently 
+used data with security features for data archiving and backup.
+
+
+
+**********
+Amazon DynamoDB Documentation
+
+
+Amazon DynamoDB is a fully managed NoSQL database service that provides fast and predictable 
+performance with seamless scalability. 
+We are using DynamoDB to store scores,Id,Name in database table.
+We can use Amazon DynamoDB to create a database table 
+that can store and retrieve any amount of data
+
+
+AWS Lambda Functions
+
+With AWS Lambda, you can run code without provisioning or managing servers. 
+You pay only for the compute time that you consume—there’s no charge when your code isn’t running.
+You can run code for virtually any type of application or backend service—all with zero 
+administration. 
+Just upload your code and Lambda takes care of everything required to run and scale your code 
+with high availability. You can set up your code to automatically trigger from other AWS services 
+or call it directly from any web or mobile app.
+
+Trigger used by lambda functions to link s3 to dynamoDB table.
+
+**********
+AWS Amplify Documentation
+
+AWS Amplify enables developers to develop and deploy cloud-powered mobile and web apps. 
+The Amplify Framework is a comprehensive set of SDKs, libraries, tools, and documentation 
+for client app development. The Amplify Console provides a continuous delivery and hosting 
+service for web applications.
+
+It helps to add feature like authentication to our app.
+
+What we’ll build
+
+This tutorial guides you through setting up a backend and integrating that backend with your 
+React app. 
+You will create a “Todo app” with a GraphQL API and to store and retrieve items in a cloud database. 
+In addition, we’ll demonstrate how to authenticate users, communicate with our API, 
+and set up continuous deployment and hosting.
+
+***********
+Add auth
+
+amplify add auth
+
+to deploy service we use push i.e,
+
+amplify push
+
+To view deployed services we use 
+
+amplify console
+
+
+
+**********
+
+AWS API Gateway
+
+
+Amazon API Gateway enables you to create and deploy your own REST and WebSocket APIs at any scale. 
+You can create robust, secure, and scalable APIs that access AWS or other web services, 
+as well as data that’s stored in the AWS Cloud. 
+You can create APIs to use in your own client applications, or you can make your APIs available 
+to third-party app developers.
+
+
+UML(Unified modelling language) :
+
+
+
